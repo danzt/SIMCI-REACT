@@ -1,9 +1,17 @@
 import React from 'react';
-import 'semantic-ui-css/semantic.min.css';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { BrowserRouter as Router } from 'react-router-dom';
+import 'semantic-ui-css/semantic.min.css';
+//Routes
+import AppRoutes from './AppRoutes';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+//Assets
+import './index.css';
+
+ReactDOM.render(
+
+    <Router>
+        <AppRoutes />
+    </Router>,
+    document.getElementById('root')
+);
