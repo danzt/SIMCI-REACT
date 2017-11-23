@@ -15,7 +15,7 @@ export default class MenuExampleSecondary extends Component {
 
         return (
             <div>
-                <Sidebar as={Menu} animation='scale down' width='thin' visible={visible} icon='labeled' vertical inverted>
+                <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
                     <Menu.Item name='Home' active={activeItem === 'Home'} onClick={this.handleItemClick}>
                         <Icon name='home'/>
                         Home
