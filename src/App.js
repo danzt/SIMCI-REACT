@@ -1,28 +1,33 @@
-import React, {Component} from 'react'
-import {Input, Menu} from 'semantic-ui-react'
+//Dependencies
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+//Styles
+import './App.css';
 
-export default class MenuExamplePointing extends Component {
-    state = {activeItem: 'home'}
+class App extends Component {
 
+    constructor() {
+        super();
+    }
 
-    handleItemClick = (e, {name}) => this.setState({activeItem: name})
+    static propTypes = {
+        children: PropTypes.object.isRequired
+    };
 
     render() {
+        //const { children } = this.props;
+
         return (
             <div>
-                <Menu pointing>
-                    <Menu.Item name='home' onClick={this.handleItemClick}/>
-                    <Menu.Item name='messages' onClick={this.handleItemClick}/>
-                    <Menu.Item name='friends' onClick={this.handleItemClick}/>
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <Input icon='search' placeholder='Search...'/>
-                        </Menu.Item>
-                        <Menu.Item name='User' onClick={this.handleItemClick}
-                                   position='right'/>
-                    </Menu.Menu>
-                </Menu>
+                {this.props.children}
             </div>
-        )
+        );
     }
 }
+
+App.propTypes = {
+    children: PropTypes.element
+};
+
+
+export default App;
