@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Sidebar, Segment, Button, Menu, Image, Icon, Header } from 'semantic-ui-react'
 
-class SidebarLeftOverlay extends Component {
+class SidebarLeftPush extends Component {
     state = { visible: false }
 
     toggleVisibility = () => this.setState({ visible: !this.state.visible })
@@ -12,7 +12,7 @@ class SidebarLeftOverlay extends Component {
             <div>
                 <Button onClick={this.toggleVisibility}>Toggle Visibility</Button>
                 <Sidebar.Pushable as={Segment}>
-                    <Sidebar as={Menu} animation='overlay' width='thin' visible={visible} icon='labeled' vertical inverted>
+                    <Sidebar as={Menu} animation='push' width='thin' visible={visible} icon='labeled' vertical inverted>
                         <Menu.Item name='home'>
                             <Icon name='home' />
                             Home
@@ -38,4 +38,4 @@ class SidebarLeftOverlay extends Component {
     }
 }
 
-export default SidebarLeftOverlay
+export default SidebarLeftPush
