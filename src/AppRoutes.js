@@ -3,13 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 
 //Components
 import App from './App';
-import MenuExampleSecondary from './Components/Menu/Menu';
+import ContainerExampleText from './Components/Dashboard/Dashboard';
 //import SidebarLeftPush from './Components/SidebarLeft/SidebarLeft';
 const AppRoutes = () =>
 
     <App>
         <Switch>
-            <Route path='/' component={MenuExampleSecondary}/>
+            <Route path='/' component={ContainerExampleText}/>
         </Switch>
     </App>;
 
