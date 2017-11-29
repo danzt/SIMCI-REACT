@@ -4,8 +4,6 @@ import {Sidebar, Menu, Icon} from 'semantic-ui-react'
 class SidebarLeftPush extends Component {
     state = {visible: false}
 
-    toggleVisibility = () => this.setState({visible: !this.state.visible})
-
     render() {
         const {activeItem} = this.state
         return (
