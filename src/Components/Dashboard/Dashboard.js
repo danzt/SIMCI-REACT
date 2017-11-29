@@ -11,7 +11,6 @@ export default class ContainerExampleText extends Component {
     toggleVisibility = () => this.setState({visible: !this.state.visible})
 
     render() {
-        const {activeItem} = this.state
         const {visible} = this.state
         return (
             <div>

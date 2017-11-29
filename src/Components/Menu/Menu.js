@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Sidebar, Segment, Menu, Icon, Input, Button, Responsive} from 'semantic-ui-react'
+import { Segment, Menu, Icon, Input, Button, Responsive} from 'semantic-ui-react'
 import SidebarLeftPush from '../SidebarLeft/SidebarLeft'
 
 export default class MenuExampleSecondary extends Component {
@@ -12,7 +12,6 @@ export default class MenuExampleSecondary extends Component {
 
     render() {
         const {activeItem} = this.state
-        const {visible} = this.state
 
         return (
             <div>

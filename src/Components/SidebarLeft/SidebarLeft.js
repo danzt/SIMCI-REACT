@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Sidebar, Segment, Button, Menu, Image, Icon, Header} from 'semantic-ui-react'
+import {Sidebar, Menu, Icon} from 'semantic-ui-react'
 
 class SidebarLeftPush extends Component {
     state = {visible: false}
@@ -7,7 +7,6 @@ class SidebarLeftPush extends Component {
     toggleVisibility = () => this.setState({visible: !this.state.visible})
 
     render() {
-        const {visible} = this.state
         const {activeItem} = this.state
         return (
             <div>
